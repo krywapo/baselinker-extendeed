@@ -1,0 +1,51 @@
+@import 'vars';
+
+body {
+    margin: 0;
+    font-family: @font;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: @font2;
+    }
+
+    .main-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vh;
+
+        h1 {
+            text-align: center;
+        }
+    } 
+
+    #show-popup {
+        text-transform: uppercase;
+        margin: 20px 0;
+        padding: 10px 50px;
+        cursor: pointer;
+        background: #2c3c6f;
+        color: white;
+        transition: 0.2s;
+        border: 2px solid #2c3c6f;
+    }
+
+    #show-popup:hover {
+        background: white;
+        color: #2c3c6f;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.50);
+        z-index: 1;
+        display: none;
+    }
+    
+}

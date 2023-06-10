@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Baselinker - zadanie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel='stylesheet' href='assets/css/min/bootstrap.min.css' media='all' />
+    <link rel='stylesheet' href='assets/css/min/styles.min.css' media='all' />
+</head>
+<body>
+    <div class="main-wrapper container">
+        
+        <div class="row">
+            <div class="col-12">
+                <h1>Witaj, kliknij przycisk poniżej:</h1>
+            </div>
+        </div>
+        
+        <div id="show-popup">
+            Start
+        </div>
+
+        <div id="popup" class="popup-container">
+            <div id="close">
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h2>Formularz</h2>
+                </div>
+            </div> 
+
+            <form id="main-form" method="post" action="post.php">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" required id="st_name" name="st_name" placeholder="Imię" minlength="3" maxlength="20">
+                    </div>
+    
+                    <div class="col-md-6">
+                        <input type="email" required id="email-address" name="email_address" placeholder="Adres email">
+                    </div>
+                </div> 
+
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="term1 row">
+                            <input class="col-1" type="checkbox" id="term" name="term_name" value="tak">
+                            <label class="col-11" for="term">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec iaculis nulla, non interdum lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse rhoncus eu diam sodales consequat. Praesent mi lorem, pharetra at dictum in, gravida vitae quam. Nulla consequat, magna ac cursus laoreet, mi metus mollis nibh, eget tristique arcu ante in mauris. Proin aliquet turpis ut lectus tempus, ac accumsan tortor blandit.e</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <input type="submit" value="Wyślij">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="overlay"></div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src='assets/js/min/scripts.min.js'></script>
+</body>
+</html>

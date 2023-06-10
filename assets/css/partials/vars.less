@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap');
+
+/** 
+BREAKEPOITS
+*/
+@xs-min: 767px;
+
+@sm-min: 768px;
+@sm-max: 991px;
+
+@md-min: 767px;
+@md-max: 1024px;
+
+@lg-min: 1200px;
+@lg-min-plus: 1400px;
+
+@xl-min: 1620px;
+@xl-min-plus: 1920px;
+@2048: 2160px;
+@xxl-min: 2500px;
+
+@phone: ~"only screen and (max-width: @{xs-min})"; // phones
+@tablet_small: ~"only screen and (min-width: @{sm-min}) and (max-width:@{sm-max})"; // smal tablets  7" // ipad portrait
+@tablet_big: ~"only screen and (min-width: @{md-min}) and (max-width:@{md-max})"; // big tablets // ipad landscape
+@large: ~"only screen and (min-width: @{lg-min})"; // computers
+@max-large: ~"only screen and (min-width: @{md-min}) and (max-width:@{lg-min})";
+@max-large-plus: ~"only screen and (max-width: @{lg-min-plus})"; // computers
+@1620MAX: ~"only screen and (max-width: @{xl-min})"; // 1620px
+@1920MAX: ~"only screen and (max-width: @{xl-min-plus})"; // 1620px
+
+
+/*
+COLORS
+*/
+@white: #fff;
+@black: #000;
+@default: #000;
+
+/*
+FONTS
+*/
+@font: 'Roboto', sans-serif;
+@font2: 'Montserrat', sans-serif;

@@ -1,0 +1,62 @@
+@import 'vars';
+
+#main-form {
+    .term1 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: flex-start;
+
+        label {
+            padding-left: 5px;
+            font-size: 13px;
+            line-height: 17px;
+        }
+
+        #term {
+            margin-left: 0;
+        }
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        border: none;
+        border-bottom: 1px solid;
+        padding: 10px;
+        font-size: 16px;
+        color: black;
+        width: 100%;
+
+        &:focus {
+            border-width: 2px;
+            box-shadow: none;
+            outline: none;
+        }
+    }
+
+    input[type="submit"] {
+        text-transform: uppercase;
+        padding: 10px 50px;
+        cursor: pointer;
+        background: #2c3c6f;
+        color: white;
+        transition: 0.2s;
+        border: none;
+        margin: auto;
+        display: inherit;
+        transition: 0.2s;
+        border: 2px solid #2c3c6f;
+
+        &:hover {
+            background: white;
+            color: #2c3c6f;
+        }
+    }
+
+    .error {
+        color: red;
+        margin-top: 5px;
+        display: block; 
+        font-size: 13px;
+    }
+}

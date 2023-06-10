@@ -1,0 +1,60 @@
+@import 'vars';
+
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 640px;
+    height: 420px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 9px 9px 20px #484848;
+    display: none;
+
+    @media @phone {
+        width: 95%;
+        height: auto;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 20px;
+    }
+
+    #close {
+        height: 25px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+
+        span {
+            display: block;
+            width: 35px;
+            height: 4px;
+            border-radius: 15px;
+            background-color: #000;
+            margin-bottom: 6px;
+
+            &:first-child {
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                top: 11px;
+                position: relative;
+            }
+
+            &:last-child {
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                top: 1px;
+                position: relative;
+            }
+        }
+    }
+}
