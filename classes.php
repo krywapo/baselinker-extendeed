@@ -46,6 +46,8 @@ class actions {
 
         array_push($table, $data);
         
+        echo '<a href="data.json">json link</a><br/>'; 
+
         return 'json: '.$json = json_encode($table, JSON_PRETTY_PRINT);
     }
 } 
